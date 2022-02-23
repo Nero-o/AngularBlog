@@ -1,0 +1,12 @@
+<section class="wrapper__post">
+    <div class="card" *ngFor="let post of postService.posts" (click)="openPost(post)">
+        <h1>{{post.titulo}}</h1>
+        <span>
+            {{post.texto | slice:0:30}}...
+        </span>
+        <div class="d-flex justify-content-between">
+            <strong>{{post.autor}}</strong>
+            <strong>{{post.data }}</strong>
+        </div>
+    </div>
+</section>

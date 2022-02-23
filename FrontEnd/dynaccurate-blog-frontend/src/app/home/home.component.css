@@ -1,0 +1,20 @@
+.wrapper__post {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    grid-gap: 15px;
+    padding:20px
+}
+
+.card {
+  box-shadow: 4px 2px 3px 3px rgba(0,0,0,0.2);
+  padding:10px;
+  cursor: pointer;
+}
+
+.card > h1 {
+    font-size:18px
+}
+
+.card > div > strong {
+    font-size:14px
+}
